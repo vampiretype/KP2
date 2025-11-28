@@ -1,0 +1,70 @@
+@import '../base/mixins.scss';
+@import '../base/variables.scss';
+.testimonial {
+ 
+  
+  &__card {
+    background: $yellow;
+    border-radius: 12px;
+    @include flex;
+  }
+  
+  &__image {
+    width: 640px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px 0 0 12px;
+  }
+  
+  &__content {
+    flex: 1;
+    padding: 42px 70px;
+    text-align: center;
+  }
+  
+  &__avatar {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  
+  &__author {
+    font-size: 16px;
+    color: $text-light;
+    margin-top: 12px;
+  }
+  
+  &__quote {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 300;
+    font-style: italic;
+    margin: 22px 0 46px;
+    text-align: left;
+  }
+  
+ &__divider {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+  }
+  
+  &__line {
+    height: 1.5px;
+    border-radius: 1px;
+    
+    &--short {
+      width: 9px;
+      background: rgba(55, 113, 200, 0.28);
+    }
+    
+    &--long {
+      width: 30px;
+      background: #3771c8;
+    }
+  
+}
+}

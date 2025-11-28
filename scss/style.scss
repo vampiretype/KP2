@@ -1,0 +1,20 @@
+// Base
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+@import 'base/responsive-mixins.scss';
+@import 'base/base.scss';
+
+// Components
+@import 'components/buttons.scss';
+@import 'components/others-company.scss';
+@import 'components/header.scss';
+@import 'components/hero.scss';
+@import 'components/facilities.scss';
+@import 'components/about.scss';
+@import 'components/testimonial.scss';
+@import 'components/hotels.scss';
+@import 'components/newsletter.scss';
+@import 'components/footer.scss';
+
+// Layouts
+@import 'layouts/responsive.scss';

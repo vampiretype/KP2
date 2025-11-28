@@ -1,0 +1,69 @@
+@import '../base/mixins.scss';
+@import '../base/variables.scss';
+.header {
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    align-items: flex-end;
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      gap: 40px;
+    }
+
+    &-link {
+      @include transition;
+      
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    
+    &:focus {
+      outline: none;
+    }
+    
+    svg {
+      display: block;
+    }
+  }
+
+  .btn--outline {
+    border-radius: 35px;
+  }
+}

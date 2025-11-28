@@ -1,0 +1,171 @@
+@import '../base/mixins.scss';
+@import '../base/variables.scss';
+.hero {
+  padding-bottom: 100px;
+  
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    margin-bottom: 40px;
+  }
+  
+  &__content {
+    flex: 1;
+    max-width: 648px;
+  }
+  
+  &__title {
+    font-size: 60px;
+    line-height: 1.36;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: $text-color;
+  }
+  
+  &__description {
+    font-size: 20px;
+    color: $text-light;
+    line-height: 1.5;
+    max-width: 478px;
+  }
+
+  &__gallery {
+    display: flex;
+    gap: 16px;
+    height: 590px;
+  }
+
+  &__main-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 50%);
+      border-radius: 16px;
+    }
+  }
+
+  &__image-title {
+    padding-left: 144px;
+    color: $white;
+    font-size: 48px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__secondary-images {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 308px;
+    flex-shrink: 0;
+  }
+
+  &__secondary-image {
+    width: 100%;
+    height: 287px;
+    object-fit: cover;
+    border-radius: 16px;
+    flex: 1;
+    
+    &:last-child {
+      flex: 1;
+    }
+  }
+}
+
+// Search Box
+.search-box {
+  background: $white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 22px 38px rgba(0, 34, 19, 0.04);
+  width: 452px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-shrink: 0;
+  justify-content: space-evenly;
+  
+  &__inputs {
+    display: flex;
+    gap: 20px;
+    height: 56px;
+  }
+  
+  &__field {
+    display: flex;
+    align-items: center;
+    background: $bg-color;
+    border-radius: 12px;
+    gap: 10px;
+    padding-left: 20px;
+    
+    &--inputs {
+      width: 218px;
+      height: 56px;
+    }
+    
+    &--location {
+      height: 56px;
+      flex: none;
+      position: relative;
+    }
+  }
+  
+  &__icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  
+  &__input {
+    font-size: 24px;
+    color: $text-color;
+    font-weight: 400;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    
+    &::placeholder {
+      color: $text-color;
+    }
+  }
+  
+  &__btn {
+    background: $primary-color;
+    border-radius: 12px;
+    width: 56px;
+    height: 56px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-left: auto;
+    
+    .search-box__icon {
+      color: $white;
+    }
+    
+    &:hover {
+      background: darken($primary-color, 10%);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 58px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  align-items: flex-end;
+}
+.header__nav-list {
+  display: flex;
+  gap: 40px;
+}
+.header__nav-link {
+  transition: all 0.3s ease;
+}
+.header__nav-link:hover {
+  color: #3771c8;
+}
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header__menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}
+.header__menu-toggle:focus {
+  outline: none;
+}
+.header__menu-toggle svg {
+  display: block;
+}
+.header .btn--outline {
+  border-radius: 35px;
+}
